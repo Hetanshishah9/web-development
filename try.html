@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Application</title>
+    <style>
+        /* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cover {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff5733;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background-color: #e6492d;
+}
+
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <video autoplay muted loop>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Welcome to Our Blog</h1>
+            <p>Discover the latest trends, insights, and more.</p>
+            <a href="blog.html" class="btn">Read Our Blog</a>
+        </div>
+    </div>
+</body>
+</html>
